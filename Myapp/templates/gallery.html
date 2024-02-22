@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+</head>
+<body>
+<a href="{% url 'my_home' %}">home</a>
+<a href="{% url 'our_services' %}">services</a>
+<a href="{% url 'my_aboutus' %}">About</a>
+<a href="{% url 'my_gallery' %}">Gallery</a>
+<a href="{% url 'my_contactus' %}">Contact</a>
+
+<h1>My Gallery</h1>
+<div class="images">
+    <img src="{% static 'img/van.jpeg' %}" alt="">
+    <img src="{% static 'img/real2.jpeg' %}" alt="">
+    <img src="{% static 'img/skull.jpeg' %}" alt="">
+</div>
+
+</body>
+</html>
